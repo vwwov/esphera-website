@@ -3,222 +3,453 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esphera AI — Automatización para tu negocio</title>
-  <meta name="description" content="Esphera AI automatiza tu negocio con agentes de IA en WhatsApp, Instagram, Facebook y Telegram. Dashboard incluido." />
+  <title>Esphera — Automatización con IA · Cualquier proceso</title>
+  <meta name="description" content="Automatizamos cualquier proceso de tu empresa con inteligencia artificial. Sin código. Sin complicaciones. Solo resultados." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav>
-    <a class="logo" href="#">Esphera AI</a>
+  <!-- ═══ NAV ═══ -->
+  <nav id="nav">
+    <a class="logo" href="#">
+      <span class="logo-mark">◈</span> Esphera
+    </a>
     <div class="nav-links">
-      <a class="nav-link" href="#services">Servicios</a>
-      <a class="nav-link" href="#how">Cómo funciona</a>
-      <a class="nav-link" href="#niches">Sectores</a>
+      <a href="#services">Servicios</a>
+      <a href="#process">Cómo funciona</a>
+      <a href="#why">Por qué Esphera</a>
+      <a href="#faq">FAQ</a>
     </div>
-    <a class="nav-cta" href="https://wa.me/YOUR_PHONE" target="_blank" rel="noopener">Contactar →</a>
+    <a class="btn btn-accent nav-cta" href="#cta">Consulta gratuita →</a>
+    <button class="nav-burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
-  <!-- Hero -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="#services" class="nav-m-link">Servicios</a>
+    <a href="#process" class="nav-m-link">Cómo funciona</a>
+    <a href="#why" class="nav-m-link">Por qué Esphera</a>
+    <a href="#faq" class="nav-m-link">FAQ</a>
+    <a href="#cta" class="btn btn-accent">Consulta gratuita →</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
   <section id="hero">
-    <p class="eyebrow">Agentes de IA · WhatsApp · Instagram · Facebook · Telegram</p>
-    <h1>Tu negocio responde solo.<br>Tú te ocupas de lo importante.</h1>
-    <p class="hero-sub">
-      Configuro WhatsApp Business y bots de IA que atienden clientes, gestionan citas y venden automáticamente, sin que tengas que estar pendiente del móvil.
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-fill" href="https://wa.me/YOUR_PHONE" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Escríbeme por WhatsApp
-      </a>
-      <a class="btn btn-outline" href="#services">Ver servicios</a>
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="hero-grid"></div>
     </div>
-    <div class="hero-divider">
-      <span>Scroll</span>
-      <div class="chevron"></div>
+    <div class="hero-content">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        Automatización con Inteligencia Artificial
+      </div>
+      <h1>Cualquier proceso.<br><span class="gradient-text">Automatizado.</span></h1>
+      <p class="hero-sub">
+        Convertimos las tareas repetitivas de tu empresa en flujos automáticos con IA.
+        Desde la atención al cliente hasta la gestión interna —
+        <em>sin que necesites saber nada de tecnología.</em>
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-accent btn-lg" href="#cta">Solicitar consulta gratuita →</a>
+        <a class="btn btn-ghost btn-lg" href="#services">Ver qué automatizamos ↓</a>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-item">
+          <span class="proof-n">24/7</span>
+          <span class="proof-l">Funcionando</span>
+        </div>
+        <div class="proof-div"></div>
+        <div class="proof-item">
+          <span class="proof-n">−80%</span>
+          <span class="proof-l">Tiempo manual</span>
+        </div>
+        <div class="proof-div"></div>
+        <div class="proof-item">
+          <span class="proof-n">∞</span>
+          <span class="proof-l">Escalabilidad</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- Ticker -->
+  <!-- ═══ TICKER ═══ -->
   <div class="ticker">
-    <div class="ticker-track">
-      <span>WhatsApp Business API</span><span>·</span>
-      <span>Claude 3.5</span><span>·</span>
-      <span>GPT-4o</span><span>·</span>
-      <span>Gemini 2.0</span><span>·</span>
-      <span>n8n</span><span>·</span>
-      <span>Make</span><span>·</span>
-      <span>Telegram Bot API</span><span>·</span>
-      <span>Airtable</span><span>·</span>
-      <span>Google Sheets</span><span>·</span>
-      <span>CRM integrations</span><span>·</span>
-      <span>WhatsApp Business API</span><span>·</span>
-      <span>Claude 3.5</span><span>·</span>
-      <span>GPT-4o</span><span>·</span>
-      <span>Gemini 2.0</span><span>·</span>
-      <span>n8n</span><span>·</span>
-      <span>Make</span><span>·</span>
-      <span>Telegram Bot API</span><span>·</span>
-      <span>Airtable</span><span>·</span>
-      <span>Google Sheets</span><span>·</span>
-      <span>CRM integrations</span><span>·</span>
+    <div class="ticker-label">Tecnologías que dominamos</div>
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span>OpenAI GPT-4o</span><span class="sep">·</span>
+        <span>Claude Sonnet</span><span class="sep">·</span>
+        <span>n8n</span><span class="sep">·</span>
+        <span>Make</span><span class="sep">·</span>
+        <span>WhatsApp Business API</span><span class="sep">·</span>
+        <span>Flowise</span><span class="sep">·</span>
+        <span>HubSpot</span><span class="sep">·</span>
+        <span>Airtable</span><span class="sep">·</span>
+        <span>Notion</span><span class="sep">·</span>
+        <span>Zapier</span><span class="sep">·</span>
+        <span>Telegram Bot API</span><span class="sep">·</span>
+        <span>Google Workspace</span><span class="sep">·</span>
+        <span>Supabase</span><span class="sep">·</span>
+        <span>Pinecone</span><span class="sep">·</span>
+        <span>OpenAI GPT-4o</span><span class="sep">·</span>
+        <span>Claude Sonnet</span><span class="sep">·</span>
+        <span>n8n</span><span class="sep">·</span>
+        <span>Make</span><span class="sep">·</span>
+        <span>WhatsApp Business API</span><span class="sep">·</span>
+        <span>Flowise</span><span class="sep">·</span>
+        <span>HubSpot</span><span class="sep">·</span>
+        <span>Airtable</span><span class="sep">·</span>
+        <span>Notion</span><span class="sep">·</span>
+        <span>Zapier</span><span class="sep">·</span>
+        <span>Telegram Bot API</span><span class="sep">·</span>
+        <span>Google Workspace</span><span class="sep">·</span>
+        <span>Supabase</span><span class="sep">·</span>
+        <span>Pinecone</span><span class="sep">·</span>
+      </div>
     </div>
   </div>
 
-  <!-- Services -->
+  <!-- ═══ PAIN ═══ -->
+  <section id="pain">
+    <div class="container">
+      <div class="section-intro centered r">
+        <span class="section-tag">El problema</span>
+        <h2 class="section-h">¿Te suena familiar?</h2>
+        <p class="section-p">Si reconoces alguna de estas situaciones, estás perdiendo tiempo y dinero cada día.</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card r">
+          <div class="pain-icon">⏳</div>
+          <h3>Tareas que se repiten siempre</h3>
+          <p>Tu equipo dedica horas a copiar datos, responder las mismas preguntas y enviar los mismos emails. Una y otra vez. Todos los días.</p>
+        </div>
+        <div class="pain-card r">
+          <div class="pain-icon">📱</div>
+          <h3>Siempre pendiente del teléfono</h3>
+          <p>Clientes que esperan respuesta. Consultas a las 11 de la noche. Notificaciones sin parar. Nunca puedes desconectar de verdad.</p>
+        </div>
+        <div class="pain-card r">
+          <div class="pain-icon">🗂️</div>
+          <h3>Información dispersa por todas partes</h3>
+          <p>Los datos del negocio están en hojas de cálculo, WhatsApp, emails y tu cabeza. Imposible tener todo bajo control.</p>
+        </div>
+      </div>
+      <div class="pain-bottom r">
+        <p>Todo eso se puede automatizar. <strong>Y nosotros lo hacemos por ti.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
   <section id="services">
-    <div class="container" style="padding-top: 110px; padding-bottom: 110px;">
+    <div class="container">
       <div class="section-intro r">
         <span class="section-tag">Servicios</span>
-        <h2 class="section-h">Lo que hago por tu negocio</h2>
-        <p class="section-p">Me encargo de toda la parte técnica. Tú recibes el resultado.</p>
+        <h2 class="section-h">Lo automatizamos<br><span class="gradient-text">todo.</span></h2>
+        <p class="section-p">Si existe el proceso, existe la automatización. Sin excepciones.</p>
       </div>
+      <div class="services-grid">
 
-      <div class="grid-3">
-        <div class="card r">
-          <span class="card-icon">📱</span>
-          <div class="card-h">WhatsApp Business</div>
-          <p class="card-p">Registro y configuro tu cuenta oficial de WhatsApp Business API. Badge verificado, plantillas aprobadas, envíos masivos.</p>
+        <div class="service-card r">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /><path d="M18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" /></svg>
+          </div>
+          <h3>Agentes de IA 24/7</h3>
+          <p>Asistentes inteligentes que atienden a tus clientes en WhatsApp, web, Instagram y Telegram. Responden preguntas, toman reservas, gestionan pedidos — sin descanso.</p>
+          <div class="service-tags">
+            <span>WhatsApp</span><span>Chatbots</span><span>Atención al cliente</span>
+          </div>
         </div>
-        <div class="card r">
-          <span class="card-icon">🤖</span>
-          <div class="card-h">Agentes de IA multicanal</div>
-          <p class="card-p">Agentes inteligentes conectados a WhatsApp, Instagram, Facebook y Telegram. Responden preguntas, toman citas y gestionan pedidos sin intervención humana, en todos tus canales a la vez.</p>
+
+        <div class="service-card r">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+          </div>
+          <h3>Automatización de comunicación</h3>
+          <p>Emails de seguimiento, confirmaciones, recordatorios, newsletters personalizadas. Tu comunicación funciona sola y llega en el momento justo a cada cliente.</p>
+          <div class="service-tags">
+            <span>Email</span><span>WhatsApp</span><span>CRM</span>
+          </div>
         </div>
-        <div class="card r">
-          <span class="card-icon">⚡</span>
-          <div class="card-h">Automatización de procesos</div>
-          <p class="card-p">Conecto los agentes a tu CRM, hojas de cálculo y herramientas internas. El agente no solo habla — actúa: crea registros, actualiza datos y dispara flujos automáticamente.</p>
+
+        <div class="service-card r">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>
+          </div>
+          <h3>Integración de sistemas</h3>
+          <p>Conectamos todas tus herramientas: CRM, ERP, hojas de cálculo, e-commerce, APIs externas. Todo habla con todo, sin intervención manual.</p>
+          <div class="service-tags">
+            <span>HubSpot</span><span>Shopify</span><span>APIs</span>
+          </div>
         </div>
-        <div class="card r">
-          <span class="card-icon">📊</span>
-          <div class="card-h">Dashboard para tu negocio</div>
-          <p class="card-p">Cada cliente recibe su propio panel de control. Consulta estadísticas en tiempo real, lee las conversaciones del agente con tus usuarios y mantén el control total.</p>
+
+        <div class="service-card r">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg>
+          </div>
+          <h3>Flujos internos automatizados</h3>
+          <p>Aprobaciones, reportes automáticos, alertas inteligentes, gestión de tareas entre departamentos. Tu empresa funciona sin que nadie tenga que recordar qué hacer.</p>
+          <div class="service-tags">
+            <span>Reportes</span><span>Alertas</span><span>Workflows</span>
+          </div>
         </div>
-        <div class="card r">
-          <span class="card-icon">🔗</span>
-          <div class="card-h">Integración con CRM</div>
-          <p class="card-p">El historial de cada cliente siempre actualizado en tu CRM, sin trabajo manual. Compatible con los principales sistemas del mercado.</p>
+
+        <div class="service-card r">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" /></svg>
+          </div>
+          <h3>IA que conoce tu negocio</h3>
+          <p>Entrenamos sistemas RAG con tu información: catálogos, precios, procedimientos, FAQs. Tu IA responde como si llevara años en tu empresa.</p>
+          <div class="service-tags">
+            <span>RAG</span><span>Base de conocimiento</span><span>Personalización</span>
+          </div>
         </div>
-        <div class="card r">
-          <span class="card-icon">🔔</span>
-          <div class="card-h">Recordatorios automáticos</div>
-          <p class="card-p">Aviso automático de citas, ofertas y seguimientos. Menos no-shows, más fidelización.</p>
+
+        <div class="service-card service-card--cta r">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg>
+          </div>
+          <h3>¿Tu caso es especial?</h3>
+          <p>Si existe el proceso, existe la automatización. Cuéntanos qué haces hoy de forma manual y encontramos la solución exacta para ti.</p>
+          <a href="#cta" class="btn btn-accent btn-sm" style="margin-top:8px">Cuéntanos tu caso →</a>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- How it works -->
-  <section id="how">
+  <!-- ═══ PROCESS ═══ -->
+  <section id="process">
     <div class="container">
-      <div class="section-intro r">
+      <div class="section-intro centered r">
         <span class="section-tag">Cómo funciona</span>
-        <h2 class="section-h">Simple. Rápido. Funciona.</h2>
-        <p class="section-p">Del primer mensaje al sistema en marcha en pocos días.</p>
+        <h2 class="section-h">Simple para ti.<br><span class="gradient-text">Complejo lo hacemos nosotros.</span></h2>
+        <p class="section-p">En ningún momento necesitas saber de tecnología. Eso es exactamente nuestro trabajo.</p>
       </div>
-
-      <div class="steps">
-        <div class="step r">
-          <span class="step-n">01</span>
-          <div>
-            <div class="step-h">Hablamos de tu negocio</div>
-            <p class="step-p">Una llamada rápida o un chat por WhatsApp. Entiendo cómo trabajas hoy y qué quieres mejorar. Sin formularios largos.</p>
+      <div class="process-timeline">
+        <div class="process-step r">
+          <div class="ps-number">01</div>
+          <div class="ps-content">
+            <h3>Consulta gratuita</h3>
+            <p>Nos cuentas cómo trabajas hoy. Qué te quita tiempo. Qué quisieras que funcionara solo. Sin formularios, sin tecnicismos. Solo una conversación.</p>
           </div>
         </div>
-        <div class="step r">
-          <span class="step-n">02</span>
-          <div>
-            <div class="step-h">Diseño la solución</div>
-            <p class="step-p">Preparo un esquema de automatización adaptado a tus procesos. Te lo explico sin tecnicismos y tú apruebas antes de seguir.</p>
+        <div class="process-connector"></div>
+        <div class="process-step r">
+          <div class="ps-number">02</div>
+          <div class="ps-content">
+            <h3>Diagnóstico y propuesta</h3>
+            <p>Mapeamos tus procesos y diseñamos la solución exacta para tu empresa. Te lo explicamos de forma clara, con números reales sobre cuánto tiempo ahorrarás.</p>
           </div>
         </div>
-        <div class="step r">
-          <span class="step-n">03</span>
-          <div>
-            <div class="step-h">Lo configuro y pongo en marcha</div>
-            <p class="step-p">Configuro WhatsApp Business, el bot y las integraciones necesarias. Pruebo todo antes del lanzamiento.</p>
+        <div class="process-connector"></div>
+        <div class="process-step r">
+          <div class="ps-number">03</div>
+          <div class="ps-content">
+            <h3>Desarrollo y pruebas</h3>
+            <p>Construimos, configuramos y probamos hasta que todo funcione perfectamente. Tú no tocas nada — solo apruebas el resultado final.</p>
           </div>
         </div>
-        <div class="step r">
-          <span class="step-n">04</span>
-          <div>
-            <div class="step-h">Te acompaño después</div>
-            <p class="step-p">Te explico cómo usarlo todo y resuelvo dudas. Si algo necesita ajuste, lo soluciono rápido.</p>
+        <div class="process-connector"></div>
+        <div class="process-step r">
+          <div class="ps-number">04</div>
+          <div class="ps-content">
+            <h3>Lanzamiento y soporte</h3>
+            <p>Tu automatización entra en marcha. No desaparecemos — te acompañamos, monitorizamos y ajustamos todo lo que necesite.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Niches -->
-  <section id="niches">
+  <!-- ═══ WHY ═══ -->
+  <section id="why">
     <div class="container">
       <div class="section-intro r">
-        <span class="section-tag">Sectores</span>
-        <h2 class="section-h">Para todo tipo de negocios</h2>
-        <p class="section-p">Más experiencia en centros de estética, pero la automatización sirve en cualquier sector con clientes.</p>
+        <span class="section-tag">Por qué Esphera</span>
+        <h2 class="section-h">No somos una agencia más.</h2>
+        <p class="section-p">Esto es lo que nos diferencia del resto.</p>
       </div>
-
-      <div class="pills">
-        <span class="pill hi r">💅 Centros de estética</span>
-        <span class="pill r">💆 Spas y masajes</span>
-        <span class="pill r">🦷 Clínicas dentales</span>
-        <span class="pill r">🏋️ Gimnasios y entrenadores</span>
-        <span class="pill r">🏠 Inmobiliarias</span>
-        <span class="pill r">🛍️ Tiendas online</span>
-        <span class="pill r">📚 Academias y formación</span>
-        <span class="pill r">🍽️ Restaurantes</span>
-        <span class="pill r">🔧 Talleres y servicios técnicos</span>
-        <span class="pill r">+ tu negocio</span>
+      <div class="why-grid">
+        <div class="why-card r">
+          <div class="why-num">01</div>
+          <h3>IA real, no promesas</h3>
+          <p>Construimos sistemas que funcionan de verdad. No prometemos magia — prometemos resultados medibles. Y los cumplimos.</p>
+        </div>
+        <div class="why-card r">
+          <div class="why-num">02</div>
+          <h3>Red de expertos en IA</h3>
+          <p>Formamos parte de una de las mayores comunidades de especialistas en IA. Si tu proyecto requiere un perfil específico, lo tenemos. Ningún proyecto es demasiado grande ni complejo.</p>
+        </div>
+        <div class="why-card r">
+          <div class="why-num">03</div>
+          <h3>Transparencia total</h3>
+          <p>Sabrás en todo momento qué estamos construyendo, cuánto avanzamos y por qué. Cero letra pequeña. Cero sorpresas. Cero tecnicismos innecesarios.</p>
+        </div>
+        <div class="why-card r">
+          <div class="why-num">04</div>
+          <h3>Soporte continuado</h3>
+          <p>No desaparecemos tras la entrega. Monitorizamos, ajustamos y mejoramos. Tu sistema crece con tu empresa, no se queda obsoleto.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats -->
+  <!-- ═══ STATS ═══ -->
   <section id="stats">
     <div class="container">
-      <div class="stats-row r">
-        <div class="stat">
+      <div class="stats-grid r">
+        <div class="stat-item">
           <div class="stat-n">24/7</div>
-          <div class="stat-l">El bot trabaja sin descanso</div>
+          <div class="stat-l">Tu empresa operativa sin interrupciones</div>
         </div>
-        <div class="stat">
-          <div class="stat-n">3 días</div>
-          <div class="stat-l">Tiempo medio de lanzamiento</div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-n">−80%</div>
+          <div class="stat-l">Reducción en tareas manuales</div>
         </div>
-        <div class="stat">
-          <div class="stat-n">−60%</div>
-          <div class="stat-l">Menos gestión manual</div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-n">7 días</div>
+          <div class="stat-l">Del diagnóstico al sistema en marcha</div>
         </div>
-        <div class="stat">
-          <div class="stat-n">×2</div>
-          <div class="stat-l">Velocidad de respuesta</div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-n">∞</div>
+          <div class="stat-l">Procesos que podemos automatizar</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta">
-    <div class="cta-box r">
-      <h2>¿Listo para automatizar?</h2>
-      <p>Escríbeme y analizamos tu negocio sin coste. Te digo exactamente qué se puede automatizar y cuánto tiempo te ahorraría.</p>
-      <a class="btn-wa" href="https://wa.me/YOUR_PHONE" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Escríbeme por WhatsApp
-      </a>
+  <!-- ═══ FAQ ═══ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-intro centered r">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-h">Preguntas que nos hacen siempre</h2>
+        <p class="section-p">Respuestas directas, sin rodeos.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item r">
+          <button class="faq-q">
+            ¿Necesito tener conocimientos técnicos?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>En absoluto. Nuestro trabajo es precisamente que tú no tengas que entender nada de tecnología. Te explicamos todo en lenguaje normal y te pedimos solo lo que realmente necesitamos: contarnos cómo funciona tu negocio.</p>
+          </div>
+        </div>
+        <div class="faq-item r">
+          <button class="faq-q">
+            ¿Cuánto tiempo tarda un proyecto?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Depende de la complejidad. Automatizaciones sencillas pueden estar en marcha en 3–5 días. Proyectos más completos tardan 2–4 semanas. En la consulta inicial te damos un plazo realista para tu caso específico.</p>
+          </div>
+        </div>
+        <div class="faq-item r">
+          <button class="faq-q">
+            ¿Funciona para empresas pequeñas o autónomos?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Perfectamente. De hecho, es donde más impacto tiene — cuando una persona o un equipo pequeño recupera horas cada día, el cambio es inmediato y muy visible. No necesitas ser una gran empresa para beneficiarte de la automatización.</p>
+          </div>
+        </div>
+        <div class="faq-item r">
+          <button class="faq-q">
+            ¿Qué pasa si algo falla después del lanzamiento?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Lo solucionamos. Incluimos soporte post-lanzamiento en todos los proyectos. Monitorizamos los sistemas activamente y, si algo necesita ajuste, actuamos rápido. No te dejamos solo con una herramienta que no entiendes.</p>
+          </div>
+        </div>
+        <div class="faq-item r">
+          <button class="faq-q">
+            ¿Trabajáis con empresas fuera de España?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Sí. Trabajamos en remoto con empresas en toda Europa y Latinoamérica. El idioma de trabajo puede ser español, inglés o ruso. La ubicación no es un límite.</p>
+          </div>
+        </div>
+        <div class="faq-item r">
+          <button class="faq-q">
+            ¿Cómo es la primera consulta?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Una videollamada o chat de 30 minutos, completamente gratuita y sin compromiso. Nos cuentas cómo funciona tu negocio, qué procesos te consumen más tiempo, y te decimos honestamente qué se puede automatizar y cuánto te ahorraría.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ═══ CTA ═══ -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-box r">
+        <div class="cta-glow"></div>
+        <span class="section-tag">Empieza hoy</span>
+        <h2>¿Listo para que tu empresa<br><span class="gradient-text">trabaje sola?</span></h2>
+        <p>Consulta gratuita de 30 minutos. Sin compromiso. Sin tecnicismos.<br>Solo tú contándonos tu negocio.</p>
+        <div class="cta-actions">
+          <a class="btn btn-accent btn-lg" href="https://wa.me/YOUR_PHONE" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Hablar por WhatsApp
+          </a>
+          <a class="btn btn-ghost btn-lg" href="mailto:hola@esphera.es">
+            hola@esphera.es
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
   <footer>
-    <span class="footer-logo">Esphera AI</span>
-    <span class="footer-copy">© 2025 Esphera AI · Automatización para negocios</span>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo"><span class="logo-mark">◈</span> Esphera</span>
+          <p>Automatización con IA para empresas que quieren crecer sin trabajar más.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <span class="footer-col-title">Servicios</span>
+            <a href="#services">Agentes de IA</a>
+            <a href="#services">Automatización</a>
+            <a href="#services">Integraciones</a>
+            <a href="#services">Flujos internos</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Empresa</span>
+            <a href="#why">Por qué Esphera</a>
+            <a href="#process">Cómo funciona</a>
+            <a href="#faq">FAQ</a>
+            <a href="#cta">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Esphera · Barcelona, España · Trabajamos en toda Europa</span>
+        <span class="footer-tagline">Hecho con IA. Pensado por personas.</span>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js" defer></script>
