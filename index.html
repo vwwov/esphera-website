@@ -20,6 +20,7 @@
     </a>
     <div class="nav-links">
       <a href="#habitaciones">Apartamentos</a>
+      <a href="#galeria">Galería</a>
       <a href="#ubicacion">Ubicación</a>
       <a href="#opiniones">Opiniones</a>
       <a href="#faq">Preguntas frecuentes</a>
@@ -32,6 +33,7 @@
 
   <div class="nav-mobile" id="navMobile">
     <a href="#habitaciones" class="nav-m-link">Apartamentos</a>
+    <a href="#galeria" class="nav-m-link">Galería</a>
     <a href="#ubicacion" class="nav-m-link">Ubicación</a>
     <a href="#opiniones" class="nav-m-link">Opiniones</a>
     <a href="#faq" class="nav-m-link">Preguntas frecuentes</a>
@@ -41,10 +43,8 @@
   <!-- ═══ HERO ═══ -->
   <section id="hero">
     <div class="hero-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <div class="hero-grid"></div>
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1800&q=70" alt="" />
+      <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
       <div class="eyebrow">
@@ -54,13 +54,38 @@
       <h1>Siéntete como en casa,<br><span class="gradient-text">en el corazón de Valencia.</span></h1>
       <p class="hero-sub">
         Apartamentos boutique en pleno casco histórico, a un paseo de los Jardines del Turia,
-        el Mercado Central y la playa. Check-in flexible, atención por WhatsApp
-        <em>y todo lo necesario para sentirte como en casa.</em>
+        el Mercado Central y la playa.
       </p>
-      <div class="hero-actions">
-        <a class="btn btn-accent btn-lg" href="https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20un%20apartamento%20en%20Casa%20Turia" target="_blank" rel="noopener">Reservar por WhatsApp →</a>
-        <a class="btn btn-ghost btn-lg" href="#habitaciones">Ver apartamentos ↓</a>
+
+      <form class="booking-bar" onsubmit="return false">
+        <div class="booking-field">
+          <label for="checkin">Llegada</label>
+          <input type="date" id="checkin" name="checkin" value="2026-10-10" />
+        </div>
+        <div class="booking-sep"></div>
+        <div class="booking-field">
+          <label for="checkout">Salida</label>
+          <input type="date" id="checkout" name="checkout" value="2026-10-13" />
+        </div>
+        <div class="booking-sep"></div>
+        <div class="booking-field">
+          <label for="guests">Huéspedes</label>
+          <select id="guests" name="guests">
+            <option>1 huésped</option>
+            <option selected>2 huéspedes</option>
+            <option>3 huéspedes</option>
+            <option>4+ huéspedes</option>
+          </select>
+        </div>
+        <a class="btn btn-accent booking-submit" href="https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20en%20Casa%20Turia" target="_blank" rel="noopener">Buscar disponibilidad</a>
+      </form>
+
+      <div class="trust-bar">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Reserva directa, sin comisiones</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Cancelación gratuita hasta 7 días antes</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Atención 24/7 por WhatsApp</span>
       </div>
+
       <div class="hero-proof">
         <div class="proof-item">
           <span class="proof-n">18</span>
@@ -154,57 +179,59 @@
       <div class="rooms-grid">
 
         <div class="room-card r">
-          <div class="room-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 18v-6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6" /><path d="M2 18v2" /><path d="M22 18v2" /><path d="M4 12V7a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3" /></svg>
-          </div>
-          <h3>Estudio Turia</h3>
-          <p>Espacio luminoso con cocina americana, ideal para viajar en pareja o en solitario por el centro histórico.</p>
-          <div class="room-tags">
-            <span>1-2 huéspedes</span><span>28 m²</span><span>Desde 75€/noche</span>
-          </div>
-        </div>
-
-        <div class="room-card r">
-          <div class="room-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11l9-8 9 8" /><path d="M5 10v10h14V10" /><path d="M9 20v-6h6v6" /></svg>
-          </div>
-          <h3>Apartamento Carmen</h3>
-          <p>Un dormitorio y salón independiente, a pasos de las mejores terrazas y galerías del barrio.</p>
-          <div class="room-tags">
-            <span>2-3 huéspedes</span><span>42 m²</span><span>Desde 95€/noche</span>
+          <div class="room-media" style="background-image:url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=65')"></div>
+          <div class="room-body">
+            <h3>Estudio Turia</h3>
+            <p>Espacio luminoso con cocina americana, ideal para viajar en pareja o en solitario por el centro histórico.</p>
+            <div class="room-tags">
+              <span>1-2 huéspedes</span><span>28 m²</span><span>Desde 75€/noche</span>
+            </div>
           </div>
         </div>
 
         <div class="room-card r">
-          <div class="room-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="3" /><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6" /><circle cx="17" cy="9" r="2.3" /><path d="M14.5 20c.2-2.6 1.7-4.6 4-4.9" /></svg>
+          <div class="room-media" style="background-image:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=65')">
+            <span class="room-badge">Más popular</span>
           </div>
-          <h3>Apartamento Familiar</h3>
-          <p>Dos dormitorios y cocina completa, pensado para familias o grupos de amigos que viajan juntos.</p>
-          <div class="room-tags">
-            <span>Hasta 5 huéspedes</span><span>68 m²</span><span>Desde 135€/noche</span>
-          </div>
-        </div>
-
-        <div class="room-card r">
-          <div class="room-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4" /><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" /></svg>
-          </div>
-          <h3>Suite Ático con Terraza</h3>
-          <p>La joya de la casa: terraza privada con vistas a los tejados del Carmen, ideal para atardeceres largos.</p>
-          <div class="room-tags">
-            <span>2-4 huéspedes</span><span>55 m² + terraza</span><span>Desde 165€/noche</span>
+          <div class="room-body">
+            <h3>Apartamento Carmen</h3>
+            <p>Un dormitorio y salón independiente, a pasos de las mejores terrazas y galerías del barrio.</p>
+            <div class="room-tags">
+              <span>2-3 huéspedes</span><span>42 m²</span><span>Desde 95€/noche</span>
+            </div>
           </div>
         </div>
 
         <div class="room-card r">
-          <div class="room-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 10h18M8 3v4M16 3v4" /></svg>
+          <div class="room-media" style="background-image:url('https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=800&q=65')"></div>
+          <div class="room-body">
+            <h3>Apartamento Familiar</h3>
+            <p>Dos dormitorios y cocina completa, pensado para familias o grupos de amigos que viajan juntos.</p>
+            <div class="room-tags">
+              <span>Hasta 5 huéspedes</span><span>68 m²</span><span>Desde 135€/noche</span>
+            </div>
           </div>
-          <h3>Estancias largas</h3>
-          <p>Tarifas especiales para reservas de una semana o más — ideal para teletrabajo o traslados a la ciudad.</p>
-          <div class="room-tags">
-            <span>+7 noches</span><span>Tarifa especial</span><span>Consultar</span>
+        </div>
+
+        <div class="room-card r">
+          <div class="room-media" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=65')"></div>
+          <div class="room-body">
+            <h3>Suite Ático con Terraza</h3>
+            <p>La joya de la casa: terraza privada con vistas a los tejados del Carmen, ideal para atardeceres largos.</p>
+            <div class="room-tags">
+              <span>2-4 huéspedes</span><span>55 m² + terraza</span><span>Desde 165€/noche</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card r">
+          <div class="room-media" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=65')"></div>
+          <div class="room-body">
+            <h3>Estancias largas</h3>
+            <p>Tarifas especiales para reservas de una semana o más — ideal para teletrabajo o traslados a la ciudad.</p>
+            <div class="room-tags">
+              <span>+7 noches</span><span>Tarifa especial</span><span>Consultar</span>
+            </div>
           </div>
         </div>
 
@@ -217,6 +244,24 @@
           <a href="#cta" class="btn btn-accent btn-sm" style="margin-top:8px">Escríbenos →</a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALERÍA ═══ -->
+  <section id="galeria">
+    <div class="container">
+      <div class="section-intro centered r">
+        <span class="section-tag">Galería</span>
+        <h2 class="section-h">Así es Casa Turia</h2>
+        <p class="section-p">Un vistazo a los espacios y rincones de la casa.</p>
+      </div>
+      <div class="gallery-grid r">
+        <div class="gallery-item gallery-big" style="background-image:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1000&q=65')"></div>
+        <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=65')"></div>
+        <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=700&q=65')"></div>
+        <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=700&q=65')"></div>
+        <div class="gallery-item gallery-wide" style="background-image:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=65')"></div>
       </div>
     </div>
   </section>
@@ -337,22 +382,34 @@
         <div class="review-card r">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">“El apartamento superó nuestras expectativas. La ubicación es perfecta y el check-in súper fácil, sin esperas.”</p>
-          <div class="review-author">Laura M. <span>· Madrid</span></div>
+          <div class="review-who">
+            <img class="review-avatar" src="https://i.pravatar.cc/100?img=47" alt="" />
+            <div class="review-author">Laura M. <span>· Madrid</span></div>
+          </div>
         </div>
         <div class="review-card r">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">“Great location, super clean, and every question we had was answered in minutes over WhatsApp.”</p>
-          <div class="review-author">James T. <span>· Londres</span></div>
+          <div class="review-who">
+            <img class="review-avatar" src="https://i.pravatar.cc/100?img=13" alt="" />
+            <div class="review-author">James T. <span>· Londres</span></div>
+          </div>
         </div>
         <div class="review-card r">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">“Perfecto para viajar en familia. El apartamento familiar tiene todo lo necesario, hasta lavadora.”</p>
-          <div class="review-author">Marco R. <span>· Roma</span></div>
+          <div class="review-who">
+            <img class="review-avatar" src="https://i.pravatar.cc/100?img=52" alt="" />
+            <div class="review-author">Marco R. <span>· Roma</span></div>
+          </div>
         </div>
         <div class="review-card r">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">“Volveremos seguro. Se nota el cuidado en cada detalle, desde la ropa de cama hasta las recomendaciones del barrio.”</p>
-          <div class="review-author">Elena P. <span>· Valencia</span></div>
+          <div class="review-who">
+            <img class="review-avatar" src="https://i.pravatar.cc/100?img=44" alt="" />
+            <div class="review-author">Elena P. <span>· Valencia</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -429,6 +486,7 @@
   <section id="cta">
     <div class="container">
       <div class="cta-box r">
+        <img class="cta-photo" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=65" alt="" />
         <div class="cta-glow"></div>
         <span class="section-tag">Reserva directa</span>
         <h2>¿Lista tu próxima escapada<br><span class="gradient-text">a Valencia?</span></h2>
